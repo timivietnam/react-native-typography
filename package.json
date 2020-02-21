@@ -40,7 +40,9 @@
     "url": "https://github.com/hectahertz/react-native-typography/issues"
   },
   "homepage": "https://github.com/hectahertz/react-native-typography#readme",
-  "dependencies": {},
+  "dependencies": {
+    "react-native-size-matters": "^0.3.0"
+  },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
