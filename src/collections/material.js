@@ -1,4 +1,5 @@
 import { Platform } from "react-native";
+import { scale } from "react-native-size-matters";
 import CombinedStyleSheet from "../internal/CombinedStyleSheet";
 import suffixProperties from "../internal/suffixProperties";
 import systemWeights from "../helpers/systemWeights";
@@ -22,78 +23,100 @@ const colors = {
 
 const getStylesForColor = color => ({
   display4: {
-    fontSize: 112,
-    lineHeight: 128,
+    // fontSize: 112,
+    // lineHeight: 128,
+    fontSize: scale(112),
+    lineHeight: scale(128),
     ...systemWeights.light,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(112) : undefined,
     color: colors[color].secondary
   },
   display3: {
-    fontSize: 56,
-    lineHeight: 64,
+    // fontSize: 56,
+    // lineHeight: 64,
+    fontSize: scale(56),
+    lineHeight: scale(64),
     ...systemWeights.regular,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(56) : undefined,
     color: colors[color].secondary
   },
   display2: {
-    fontSize: 45,
-    lineHeight: 52,
+    // fontSize: 45,
+    // lineHeight: 52,
+    fontSize: scale(45),
+    lineHeight: scale(52),
     ...systemWeights.regular,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(45) : undefined,
     color: colors[color].secondary
   },
   display1: {
-    fontSize: 34,
-    lineHeight: 40,
+    // fontSize: 34,
+    // lineHeight: 40,
+    fontSize: scale(34),
+    lineHeight: scale(40),
     ...systemWeights.regular,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(34) : undefined,
     color: colors[color].secondary
   },
   headline: {
-    fontSize: 24,
-    lineHeight: 32,
+    // fontSize: 24,
+    // lineHeight: 32,
+    fontSize: scale(24),
+    lineHeight: scale(32),
     ...systemWeights.regular,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(24) : undefined,
     color: colors[color].primary
   },
   title: {
-    fontSize: 20,
-    lineHeight: 28,
+    // fontSize: 20,
+    // lineHeight: 28,
+    fontSize: scale(20),
+    lineHeight: scale(28),
     ...systemWeights.semibold,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(20) : undefined,
     color: colors[color].primary
   },
   subheading: {
-    fontSize: 16,
-    lineHeight: 24,
+    // fontSize: 16,
+    // lineHeight: 24,
+    fontSize: scale(16),
+    lineHeight: scale(24),
     ...systemWeights.regular,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(16) : undefined,
     color: colors[color].primary
   },
   body2: {
-    fontSize: 14,
-    lineHeight: 24,
+    // fontSize: 14,
+    // lineHeight: 24,
+    fontSize: scale(14),
+    lineHeight: scale(24),
     ...systemWeights.semibold,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(14) : undefined,
     color: colors[color].primary
   },
   body1: {
-    fontSize: 14,
-    lineHeight: 20,
+    // fontSize: 14,
+    // lineHeight: 20,
+    fontSize: scale(14),
+    lineHeight: scale(20),
     ...systemWeights.regular,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(14) : undefined,
     color: colors[color].primary
   },
   caption: {
-    fontSize: 12,
-    lineHeight: 16,
+    // fontSize: 12,
+    // lineHeight: 16,
+    fontSize: scale(12),
+    lineHeight: scale(16),
     ...systemWeights.regular,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(12) : undefined,
     color: colors[color].secondary
   },
   button: {
-    fontSize: 14,
-    lineHeight: 20,
+    // fontSize: 14,
+    // lineHeight: 20,
+    fontSize: scale(14),
+    lineHeight: scale(20),
     ...systemWeights.semibold,
     letterSpacing: Platform.OS === "ios" ? sanFranciscoSpacing(14) : undefined,
     color: colors[color].primary

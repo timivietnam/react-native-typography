@@ -13,6 +13,7 @@ var _extends =
     return target;
   };
 var _reactNative = require("react-native");
+var _reactNativeSizeMatters = require("react-native-size-matters");
 var _CombinedStyleSheet = require("../internal/CombinedStyleSheet");
 var _CombinedStyleSheet2 = _interopRequireDefault(_CombinedStyleSheet);
 var _suffixProperties = require("../internal/suffixProperties");
@@ -41,7 +42,10 @@ var colors = {
 var getStylesForColor = function getStylesForColor(color) {
   return {
     display4: _extends(
-      { fontSize: 112, lineHeight: 128 },
+      {
+        fontSize: (0, _reactNativeSizeMatters.scale)(112),
+        lineHeight: (0, _reactNativeSizeMatters.scale)(128)
+      },
       _systemWeights2.default.light,
       {
         letterSpacing:
@@ -52,7 +56,10 @@ var getStylesForColor = function getStylesForColor(color) {
       }
     ),
     display3: _extends(
-      { fontSize: 56, lineHeight: 64 },
+      {
+        fontSize: (0, _reactNativeSizeMatters.scale)(56),
+        lineHeight: (0, _reactNativeSizeMatters.scale)(64)
+      },
       _systemWeights2.default.regular,
       {
         letterSpacing:
@@ -63,7 +70,10 @@ var getStylesForColor = function getStylesForColor(color) {
       }
     ),
     display2: _extends(
-      { fontSize: 45, lineHeight: 52 },
+      {
+        fontSize: (0, _reactNativeSizeMatters.scale)(45),
+        lineHeight: (0, _reactNativeSizeMatters.scale)(52)
+      },
       _systemWeights2.default.regular,
       {
         letterSpacing:
@@ -74,7 +84,10 @@ var getStylesForColor = function getStylesForColor(color) {
       }
     ),
     display1: _extends(
-      { fontSize: 34, lineHeight: 40 },
+      {
+        fontSize: (0, _reactNativeSizeMatters.scale)(34),
+        lineHeight: (0, _reactNativeSizeMatters.scale)(40)
+      },
       _systemWeights2.default.regular,
       {
         letterSpacing:
@@ -85,7 +98,10 @@ var getStylesForColor = function getStylesForColor(color) {
       }
     ),
     headline: _extends(
-      { fontSize: 24, lineHeight: 32 },
+      {
+        fontSize: (0, _reactNativeSizeMatters.scale)(24),
+        lineHeight: (0, _reactNativeSizeMatters.scale)(32)
+      },
       _systemWeights2.default.regular,
       {
         letterSpacing:
@@ -96,7 +112,10 @@ var getStylesForColor = function getStylesForColor(color) {
       }
     ),
     title: _extends(
-      { fontSize: 20, lineHeight: 28 },
+      {
+        fontSize: (0, _reactNativeSizeMatters.scale)(20),
+        lineHeight: (0, _reactNativeSizeMatters.scale)(28)
+      },
       _systemWeights2.default.semibold,
       {
         letterSpacing:
@@ -107,7 +126,10 @@ var getStylesForColor = function getStylesForColor(color) {
       }
     ),
     subheading: _extends(
-      { fontSize: 16, lineHeight: 24 },
+      {
+        fontSize: (0, _reactNativeSizeMatters.scale)(16),
+        lineHeight: (0, _reactNativeSizeMatters.scale)(24)
+      },
       _systemWeights2.default.regular,
       {
         letterSpacing:
@@ -118,7 +140,10 @@ var getStylesForColor = function getStylesForColor(color) {
       }
     ),
     body2: _extends(
-      { fontSize: 14, lineHeight: 24 },
+      {
+        fontSize: (0, _reactNativeSizeMatters.scale)(14),
+        lineHeight: (0, _reactNativeSizeMatters.scale)(24)
+      },
       _systemWeights2.default.semibold,
       {
         letterSpacing:
@@ -129,7 +154,10 @@ var getStylesForColor = function getStylesForColor(color) {
       }
     ),
     body1: _extends(
-      { fontSize: 14, lineHeight: 20 },
+      {
+        fontSize: (0, _reactNativeSizeMatters.scale)(14),
+        lineHeight: (0, _reactNativeSizeMatters.scale)(20)
+      },
       _systemWeights2.default.regular,
       {
         letterSpacing:
@@ -140,7 +168,10 @@ var getStylesForColor = function getStylesForColor(color) {
       }
     ),
     caption: _extends(
-      { fontSize: 12, lineHeight: 16 },
+      {
+        fontSize: (0, _reactNativeSizeMatters.scale)(12),
+        lineHeight: (0, _reactNativeSizeMatters.scale)(16)
+      },
       _systemWeights2.default.regular,
       {
         letterSpacing:
@@ -151,7 +182,10 @@ var getStylesForColor = function getStylesForColor(color) {
       }
     ),
     button: _extends(
-      { fontSize: 14, lineHeight: 20 },
+      {
+        fontSize: (0, _reactNativeSizeMatters.scale)(14),
+        lineHeight: (0, _reactNativeSizeMatters.scale)(20)
+      },
       _systemWeights2.default.semibold,
       {
         letterSpacing:
